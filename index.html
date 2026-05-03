@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watercolor Palette Extractor | Konstlabbet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Konstlabbet</div>
+            <ul>
+                <li><a href="#">Start</a></li>
+                <li><a href="#">ArtLab-Tools</a></li>
+                <li><a href="#">Om Jannis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Hitta dina akvarellfärger från vilket foto som helst.</h1>
+            <p>Ett gratis verktyg för konstnärer. Ladda upp en bild och få pigmentnamn, koder och förslag på alternativ direkt i din webbläsare [1, 3].</p>
+            <div class="upload-box">
+                <p>Klicka eller dra din bild hit</p>
+                <span>JPG, PNG, WEBP</span>
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section class="privacy">
+            <div class="privacy-content">
+                <h2>🔒 Din integritet är vårt löfte.</h2>
+                <p>All bildbehandling sker lokalt på din enhet. Ingen uppladdning till servrar, ingen lagring, 100% privat [3].</p>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features">
+            <div class="section-title">Fem palettstilar för din vision</div>
+            <div class="grid">
+                <div class="feature-item">
+                    <h3>Natural</h3>
+                    <p>Fångar de sanna dominerande färgerna för realistiskt måleri [4].</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Expressionist</h3>
+                    <p>Ökar mättnad och kontrast för känslomässig kraft [4].</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Impressionist</h3>
+                    <p>Mjukar upp och ljusar upp färgerna för ett lysande, disigt ljus [5].</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Earth Tones</h3>
+                    <p>Skiftar paletten mot varma ockra-, sienna- och umbratoner [5].</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Muted / Tonal</h3>
+                    <p>Skalar bort mättnad för studier av valörer och atmosfär [6].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="steps">
+            <h2>Från foto till palett på sekunder.</h2>
+            <div class="step-list">
+                <div class="step"><span>01</span> Ladda upp referensbild [7].</div>
+                <div class="step"><span>02</span> Välj palettstil [7].</div>
+                <div class="step"><span>03</span> Ställ in antal färger [8].</div>
+                <div class="step"><span>04</span> Extrahera och analysera [8].</div>
+                <div class="step"><span>05</span> Ladda ner och börja måla [9].</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Jannis Politidis | Konstlabbet [2, 10]</p>
+            <p>fotografjannis@gmail.com | +46707272242 [2]</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+CSS (style.css)
+/* Grundinställningar inspirerade av modern byrådesign */
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #ffffff;
+    --accent-color: #555555;
+    --border-color: #333333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 2rem 5%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+    padding: 8rem 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #888;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.upload-box {
+    border: 2px dashed var(--border-color);
+    padding: 4rem;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    border-color: #fff;
+}
+
+/* Privacy Section */
+.privacy {
+    background-color: #111;
+    padding: 4rem 5%;
+    margin: 4rem 0;
+}
+
+/* Grid Section */
+.features {
+    padding: 6rem 5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.feature-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Steps Section */
+.steps {
+    padding: 6rem 5%;
+}
+
+.step-list {
+    margin-top: 3rem;
+}
+
+.step {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+}
+
+.step span {
+    margin-right: 2rem;
+    color: var(--accent-color);
+    font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    padding: 4rem 5%;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    color: #555;
+    text-align: center;
+}
